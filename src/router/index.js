@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import AddNProgressToRouter from "./routerProgress";
 
 Vue.use(VueRouter);
 
@@ -26,5 +27,8 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
+
+// 添加路由 进度
+AddNProgressToRouter(router);
 
 export default router;
