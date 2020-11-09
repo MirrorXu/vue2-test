@@ -1,5 +1,5 @@
 import NProgress from 'nprogress' // Progress 进度条
-import 'nprogress/nprogress.css' // Progress 进度条样式
+import '@/assets/nprogress.css' // Progress 进度条样式
 export default function AddNProgressToRouter (router) {
   router.beforeEach((to, from, next) => {
     NProgress.start()
